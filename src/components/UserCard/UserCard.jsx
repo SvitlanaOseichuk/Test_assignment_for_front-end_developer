@@ -6,6 +6,7 @@ export default function UserCard({ user }) {
   return (
     <li key={user.id} className={style.user_card}>
       <img
+        loading="lazy"
         className={style.user_img}
         src={user.photo ? user.photo : DefaultPhoto}
         alt="User photo preview"
