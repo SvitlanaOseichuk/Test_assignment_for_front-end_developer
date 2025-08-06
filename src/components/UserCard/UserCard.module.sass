@@ -1,0 +1,44 @@
+@use "../../styles/_variables.sass"
+@use "../../styles/_mixins.sass"
+
+
+.user_card
+  +mixins.flex-center
+  +mixins.width-center
+  flex-direction: column
+  background-color: variables.$white-color
+  width: 328px
+  height: 254px
+  border-radius: 10px
+  padding: 20px
+
+  @media (min-width: 768px)
+    width: 344px
+
+  @media (min-width: 1024px)
+    width: 282px
+
+  @media (min-width: 1170px)
+    width: 370px
+
+
+.user_info_row
+  max-width: 100%
+  overflow: hidden
+
+
+.user_img
+  width: 70px
+  height: 70px
+  border-radius: 70px
+
+
+.user_data
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+
+.user_name
+  @extend .user_data
+  padding: 20px 0

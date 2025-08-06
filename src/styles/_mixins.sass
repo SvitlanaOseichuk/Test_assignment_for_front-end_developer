@@ -1,0 +1,20 @@
+=flex-center
+  display: flex
+  align-items: center
+  justify-content: center 
+
+
+=width-center
+  max-width: 1170px
+  margin: 0 auto
+
+
+=responsive-padding($padding768, $padding1024, $padding1170)
+  @media (min-width: 768px)
+    padding: $padding768
+
+  @media (min-width: 1024px)
+    padding: $padding1024
+
+  @media (min-width: 1170px)
+    padding: $padding1170

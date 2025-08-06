@@ -1,0 +1,61 @@
+@use "./_variables"
+@use "./_mixins.sass"
+
+
+*, *::before, *::after
+  box-sizing: border-box
+
+
+body
+  font-family: variables.$font-stack
+  font-optical-sizing: auto
+  font-weight: variables.$font-weight
+  font-style:  variables.$font-style
+  font-size: 16px
+  margin: auto
+  background-color: variables.$background-color
+  color: variables.$text-black-color
+  min-width: 360px
+  line-height: 26px
+  text-align: center
+  padding-bottom: 100px
+    
+
+h1, h2, h3
+  margin: 0
+  text-align: center
+  font-family: inherit
+  font-weight:  variables.$font-weight
+  font-size: 40px
+  line-height: 40px 
+
+
+p 
+  margin: 0
+  
+
+ul, ol
+  list-style: none
+  margin: 0
+  padding: 0
+
+
+button
+  background-color: variables.$primary-color
+  width: 100px
+  height: 34px
+  border-radius: 80px
+  font-family: inherit
+  border: none
+  font-weight:  variables.$font-weight
+  font-style:  variables.$font-style
+  font-size: 16px
+  line-height: 26px
+
+  &:hover
+    background-color: variables.$hover-button-color
+    cursor: pointer
+
+  &:disabled 
+    background-color: variables.$disabled-button-color
+    cursor: not-allowed 

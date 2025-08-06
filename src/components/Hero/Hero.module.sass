@@ -1,0 +1,53 @@
+@use "../../styles/_variables.sass"
+@use "../../styles/_mixins.sass"
+
+
+//response for the background
+.hero_section  
+  +mixins.flex-center
+  +mixins.width-center
+  position: relative
+  background-image: url("../../assets/pexels-alexandr-podvalny-1227513.jpeg")
+  background-repeat: no-repeat
+  background-size: 342.315% 164.03%
+  background-position: -446.56px -317.009px
+  height: 500px
+  color: variables.$white-color
+
+  &::after
+    content: ""
+    position: absolute
+    inset: 0
+    background: linear-gradient(0deg, #{variables.$hero-background-color} 0%, #{variables.$hero-background-color} 100%)
+    z-index: 1
+
+  @media (min-width: 768px)
+    background-position: -952.661px -317.009px
+
+  @media (min-width: 1024px)
+    background-position: -1270.215px -412.112px
+    height: 650px
+
+  @media (min-width: 1170px)
+    background-size: 218.803% 262.115%
+    background-position: -695px -842.321px
+
+
+//response for the content
+.hero_content   
+  position: relative
+  z-index: 2
+  height: 389px
+  width: 328px
+  margin-bottom: 31px
+
+  @media (min-width: 768px)
+    height: 323px
+    width: 380px
+    margin-bottom: 0
+    padding-top: 1px
+  
+
+.hero_text 
+  margin-top: 21px
+  margin-bottom: 32px

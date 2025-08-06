@@ -1,0 +1,32 @@
+@use "../../styles/_variables.sass"
+@use "../../styles/_mixins.sass"
+
+
+.users_container
+  +mixins.width-center
+  padding: 140px 16px
+  +mixins.responsive-padding(140px 32px, 140px 60px, 140px 0)  //media
+
+
+.users_list
+  +mixins.flex-center
+  flex-wrap: wrap
+  padding: 50px 0
+  gap: 20px
+
+  @media (min-width: 768px)
+    gap: 16px
+
+  @media (min-width: 1024px)
+    gap: 29px
+
+
+.loader
+  width: 48px
+  height: 48px
+  margin: 20px
+  animation: spin 1s linear infinite
+
+@keyframes spin
+  100%
+    transform: rotate(360deg)

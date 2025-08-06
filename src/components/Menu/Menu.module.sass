@@ -1,0 +1,31 @@
+@use "../../styles/_variables.sass"
+@use "../../styles/_mixins.sass"
+
+
+//for background
+.menu 
+  background-color: variables.$white-color
+  width: 100%
+
+
+//for content
+.menu_content  
+  +mixins.flex-center
+  +mixins.width-center
+  width: 100%
+  padding: 13px 16px
+  justify-content: space-between
+  +mixins.responsive-padding(13px 32px, 13px 60px, 3px 0) //media
+
+
+.logo
+  +mixins.flex-center
+  width: 104px
+  height: 26px
+
+
+.nav_list
+  +mixins.flex-center
+  width: 210px
+  gap: 10px
+  justify-content: space-between
