@@ -34,11 +34,12 @@ Live demo: [https://test-assignment-for-front-end-devel.vercel.app/](https://tes
 ## 📦 Installation & Setup
 
 To run this project locally:
-
+```bash
 git clone https://github.com/your-username/test-assignment.git
 cd test-assignment
 npm install
 npm run dev
+```
 
 ---
 
